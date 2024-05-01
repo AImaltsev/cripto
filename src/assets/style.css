@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+body {
+  background: rgb(74, 25, 111);
+  background: linear-gradient(90deg, rgba(74, 25, 111, 1) 0%, rgba(149, 26, 214, 1) 100%);
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+  margin-top: 100px;
+  font-size: 10em;
+}
