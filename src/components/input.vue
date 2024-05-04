@@ -1,16 +1,21 @@
 <template>
-  <input min='0' type="number" @input="chamngeAmount($event.target.value)">
-  <button @click="convert()">Конвертировать</button>
+  <input min='0' type="number" @input="changeAmount($event.target.value)">
+  <button @click="convert()" class="convert-btn">Конвертировать</button>
+  <button @click="favorite()" class="favorite-btn">В избранное</button>
 </template>
 
 <script>
 export default {
   props: {
-    chamngeAmount: {
+    changeAmount: {
       type: Function,
       requared: true,
     },
     convert: {
+      type: Function,
+      required: true
+    },
+    favorite: {
       type: Function,
       required: true
     }
@@ -40,5 +45,12 @@ button {
   background: #1a032d;
   border: 0;
   border-radius: 3px;
+}
+
+.convert-btn {
+  margin-left: 10px;
+}
+.favorite-btn {
+  margin-left: 10px;
 }
 </style>
